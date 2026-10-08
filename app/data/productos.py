@@ -1,0 +1,16 @@
+productos = [
+    {"nombre": "Teclado Mecánico", "precio": 49.99, "disponible": True},
+    {"nombre": "Ratón Óptico", "precio": 19.99, "disponible": False},
+    {"nombre": "Monitor 4K", "precio": 299.99, "disponible": True},
+    {"nombre": "Laptop Gaming", "precio": 899.99, "disponible": True},
+    {"nombre": "SSD 1TB", "precio": 79.99, "disponible": True},
+    {"nombre": "Auriculares Bluetooth", "precio": 69.95, "disponible": False},
+    {"nombre": "Webcam Full HD", "precio": 89.5, "disponible": True},
+    {"nombre": "Impresora Multifunción", "precio": 129.99, "disponible": True},
+    {"nombre": "Altavoz Portátil", "precio": 59.0, "disponible": False},
+    {"nombre": "Cargador USB-C", "precio": 24.99, "disponible": True},
+    {"nombre": "Tablet 10\"", "precio": 249.0, "disponible": True},
+    {"nombre": "Router Wi-Fi 6", "precio": 119.99, "disponible": False},
+    {"nombre": "Micrófono USB", "precio": 39.99, "disponible": True},
+    {"nombre": "Silla Gaming", "precio": 189.0, "disponible": True},
+]
