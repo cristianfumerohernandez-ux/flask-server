@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block tittle %}Mi App{% endblock %}</title>
+    <title>{% block title %}Mi App{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/basic.css') }}">
 </head>
+
 <body>
     <header>
-    <h1>Esta es la cabecera de mi app</h1>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="{{ url_for('home') }}">Inicio</a>
-            </li>
-            <li>
-                <a href="{{ url_for ('greetings', name= 'invitado') }}">Saluda</a>
-            </li>
-            <li>
-                <a href="{{ url_for('catalogo') }}">Catálogo</a>
-            </li>
-        </ul>
-    </nav>
-    <hr>
+        <h1>Esta es la cabecera de mi app</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{ url_for('home') }}">Inicio</a>
+                </li>
+                <li>
+                    <a href="{{ url_for ('greetings', name= 'invitado') }}">Saluda</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('catalogo') }}">Catálogo</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('contacto') }}">Contacto</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('filtrar') }}">Filtrar</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
     </header>
-    
+
     <main>
         <h1>Contenido de mi página</h1>
         {% block content %}
@@ -36,4 +43,5 @@
         <p>2026&copy;IES Las Galletas</p>
     </footer>
 </body>
+
 </html>
